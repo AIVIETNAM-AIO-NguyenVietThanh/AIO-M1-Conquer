@@ -19,3 +19,4 @@ def chunk_document(text: str) -> list[str]:
     )
     chunker = SemanticChunker(embeddings)
     return chunker.split_text(text)
+

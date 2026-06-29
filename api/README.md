@@ -5,12 +5,17 @@ A synchronous FastAPI microservice for document ingestion and retrieval-augmente
 ## Prerequisites
 
 - Python 3.12+
+
 - [uv](https://github.com/astral-sh/uv): `pip install uv`
+
 - PostgreSQL with the pgvector extension:
+  
   ```sql
   CREATE EXTENSION vector;
   ```
+
 - Ollama running locally with models pulled:
+  
   ```
   ollama pull nomic-embed-text
   ollama pull tinyllama
